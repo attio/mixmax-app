@@ -1,7 +1,7 @@
 import {isErrored} from "@attio/fetchable"
 import {Workflows, useAsyncCache} from "attio/client"
-import listSequences from "../../mixmax/list-sequences.server"
-import {mixmaxApiErrorUserMessage} from "../../mixmax/types"
+import listSequences from "../../../mixmax/list-sequences.server"
+import {mixmaxApiErrorUserMessage} from "../../../mixmax/types"
 import block from "./block"
 
 export default Workflows.defineConfigurator(block, (workflowBlock) => {

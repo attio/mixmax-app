@@ -1,7 +1,7 @@
 import {errored, isErrored} from "@attio/fetchable"
 import {Workflows} from "attio/server"
-import {getMixmax} from "../../mixmax/get-mixmax"
-import {mixmaxApiErrorUserMessage, unexpectedMixmaxError} from "../../mixmax/types"
+import {getMixmax} from "../../../mixmax/get-mixmax"
+import {mixmaxApiErrorUserMessage, unexpectedMixmaxError} from "../../../mixmax/types"
 import block from "./block"
 
 export default Workflows.defineWorkflowBlockExecute(block, async ({config}) => {

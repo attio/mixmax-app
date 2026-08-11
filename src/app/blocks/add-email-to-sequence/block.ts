@@ -6,7 +6,7 @@ export default Workflows.defineWorkflowBlock({
     title: "Add to Mixmax sequence",
     description: "Add an email to a Mixmax sequence",
     requireUserConnection: true,
-    schema: Workflows.ConfigSchema.struct({
+    configSchema: Workflows.ConfigSchema.struct({
         sequenceId: Workflows.ConfigSchema.string(),
         email: Workflows.ConfigSchema.emailAddress(),
         name: Workflows.ConfigSchema.personalName().optional(),
